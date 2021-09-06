@@ -1,0 +1,46 @@
+<style>
+    .search-container {
+        width: 100%;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-rows: 3fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 5fr 5fr 1fr;
+    }
+
+    .foogle-search {
+        
+        width: 100%;
+        grid-area: 2/2/3/4;
+        border-style: double;
+        
+    }
+
+    .foogle-logo {
+        grid-area: 1/2/2/4;
+        /*justify-self: center;
+        align-self: center;*/
+
+    }
+
+    .main {
+        margin: 50px;
+    }
+
+    #search-textbox {
+        width:100%;
+    }
+</style>
+<header>
+    <div class="top-banner">HI</div>
+</header>
+<main>
+    <div class="search-container">
+        <div class="foogle-logo">
+            <img src="images/foogle-logo" width=300px>
+        </div>
+        <div class="foogle-search">
+            <form><input type="text" id="search-textbox"></form>
+        </div>
+    </div>
+</main>
