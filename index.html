@@ -5,24 +5,50 @@
         align-items: center;
         justify-items: center;
         grid-template-rows: 3fr 1fr 1fr 1fr;
-        grid-template-columns:1fr 5fr 5fr 1fr;
+        grid-template-columns: 1fr 5fr 5fr 1fr;
     }
 
-    .foogle-search{
-        width:100%;
-        grid-area:2/2/2/4;
-        border-style: double;
-    }
-
-    .foogle-logo{
-        grid-area: 1/2/2/4;
-        justify-self: center;
+    .foogle-search {
         align-self: center;
-        
+        width: 100%;
+        grid-area: 2/2/3/4;
+       
+        margin: 0px;
     }
 
-    .main{
-        margin:50px;
+    .foogle-logo {
+        grid-area: 1/2/2/4;
+        /*justify-self: center;
+        align-self: center;*/
+
+    }
+
+    .magnifying-glass{
+        grid-area:2/1/3/2;
+        filter:opacity(50%);
+        border-style: solid;
+        border-width:0.5px;
+        height: -webkit-fill-available;
+        align-items: center;
+        border-top-left-radius: 65%;
+        border-bottom-left-radius: 65%;
+        border-right:0px;
+        border-color:lightgrey;
+
+    }
+
+    .microphone{
+     grid-area:2/4/3/5; 
+    }
+
+    #search-textbox {
+        width:100%;
+        padding:10px;
+        border-style:solid;
+        border-width: 0.5px;;
+        border-color: lightgrey;
+        border-left: 0px;
+        font-size: larger;
     }
 </style>
 <header>
@@ -33,8 +59,11 @@
         <div class="foogle-logo">
             <img src="images/foogle-logo" width=300px>
         </div>
-        <div class="foogle-search">
-            <form><input type="text" id="search-textbox"></form>
-        </div>
+        <form class="foogle-search">
+            <input type="text" id="search-textbox">
+        </form>
+        <div class="microphone-box"></div>
+        <div class="magnifying-glass"><img src="images/outline_search_black_24dp.png" width="45%"></div>
+        <div class="microphone"><img src="images/outline_mic_black_24dp.png" width="45%"></div>
     </div>
 </main>
