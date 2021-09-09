@@ -4,69 +4,77 @@
         display: grid;
         align-items: center;
        /* justify-items: center;*/
-        grid-template-rows: 3fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 5fr 5fr 1fr ;
-        
+        grid-template-rows: 3fr 40px 1fr 1fr;
+        grid-template-columns: 50px minmax(100px, 750px) 50px;
+justify-content: center;
     }
 
     .foogle-search {
         /*align-self: center;
         justify-items: center;*/
-        width: 100%;
-        grid-area: 2/2/3/4;
-
+        
+        grid-area: 2/2/3/3;
         margin: 0px;
+        /* height: 40px;*/
     }
 
     .foogle-logo {
-        grid-area: 1/2/2/4;
-justify-self:center;
+        grid-area: 1/1/2/4;
+        justify-self: center;
 
     }
 
     .magnifying-glass {
-        grid-area: 2/1/3/2;
-
+        grid-area: 2/1/2/2;
+        /*height: 38px;*/
         border-style: solid;
         border-width: 0.5px;
-        height: 38px;
+height: 100%;
         border-top-left-radius: 25px;
         border-bottom-left-radius: 25px;
         border-right: 0px;
         border-color: lightgrey;
+align-self: center;
 
     }
 
     .microphone {
-        display: block;
-        grid-area: 2/4/3/5;
+        /*display: block;*/
+        grid-area: 2/3/3/4;
+        /*height: 38px;*/
+
         border-width: 0.5px;
         border-style: solid;
         border-color: lightgrey;
-        height: 38px;
+
         border-left: 0px;
         border-top-right-radius: 25px;
         border-bottom-right-radius: 25px;
 
     }
 
-    #search-textbox {
+    .search-textbox {
         width: 100%;
-        padding: 15px;
+       /* padding: 15px;*/
+       height: 100%;
         border-style: solid;
         border-width: 0.5px;
-        height: 40px;
         border-color: lightgrey;
         border-left: 0px;
-        font-size: larger;
         border-right: 0px;
+/*        font-size: larger;
+*/
+    }
+
+    .search-textbox:focus{
+        outline: none;
     }
 
     .search-icons {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 45%;
+        width: 20px;
         filter: opacity(50%);
     }
 
@@ -89,18 +97,18 @@ justify-self:center;
         text-decoration: underline;
     }
 
-    nav{
+    nav {
         height: 50px;
-        display:flexbox;
-        align-items:center ;
+        display: flexbox;
+        align-items: center;
     }
 
-    #nav-icon{
-        width:12.5%;
+    #nav-icon {
+        width: 12.5%;
     }
 
-    #nav-button{
-        display:block;
+    #nav-button {
+        display: block;
         background-color: blue;
     }
 </style>
@@ -125,9 +133,9 @@ justify-self:center;
             <img src="images/foogle-logo" width=300px>
         </div>
         <form class="foogle-search">
-            <input type="text" id="search-textbox">
+            <input type="text" class="search-textbox">
         </form>
-        <div class="microphone-box"></div>
+        
         <div class="magnifying-glass"><img src="images/outline_search_black_24dp.png" class="search-icons"></div>
         <div class="microphone"><img src="images/outline_mic_black_24dp.png" class="search-icons" alt="Search by voice">
         </div>
