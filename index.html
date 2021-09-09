@@ -9,8 +9,8 @@
         justify-content: center;
     }
 
-    .foogle-search{
-        grid-area:2/1/3/4;
+    .foogle-search {
+        grid-area: 2/1/3/4;
         display: grid;
         grid-template-columns: 50px auto 50px;
         border-style: solid;
@@ -20,19 +20,22 @@
         border-top-right-radius: 25px;
         border-bottom-right-radius: 25px;
         border-color: lightgrey;
-height:100%;
-align-content:center;
+        height: 100%;
+        align-content: center;
     }
+
     .foogle-searchbox {
-        
+
 
         grid-area: 2/2/3/3;
         margin: 0px;
-        
+
     }
 
+
     .foogle-search:hover {
-        box-shadow: 0px 0px 8px -2px #c7c6c6;  }
+        box-shadow: 0px 0px 8px -2px #c7c6c6;
+    }
 
     .foogle-logo {
         grid-area: 1/1/2/4;
@@ -42,29 +45,29 @@ align-content:center;
 
     .magnifying-glass {
         grid-area: 2/1/2/2;
-        
+
         display: flex;
-       
+
         align-items: center;
-      
+
 
     }
 
     .microphone {
         display: flex;
         grid-area: 2/3/3/4;
-        
+
         align-items: center;
-      
+
 
     }
 
     .search-textbox {
         width: 100%;
-      
+
         height: 100%;
         border: none;
-       
+
         font-size: larger;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
@@ -72,6 +75,7 @@ align-content:center;
 
     .search-textbox:focus {
         outline: none;
+
     }
 
 
@@ -107,6 +111,7 @@ align-content:center;
         height: 50px;
         display: flexbox;
         align-items: center;
+        word-spacing: 20px;
     }
 
     #nav-icon {
@@ -114,9 +119,17 @@ align-content:center;
     }
 
     #nav-button {
-        display: block;
+        padding: 10px 20px 10px 20px;
         background-color: blue;
+        color: white;
+        word-spacing: 0px;
+        border-radius: 5px;
     }
+    #nav-button:hover{
+        text-decoration: none;
+        background-color: rgb(41, 41, 255);
+    }
+
 </style>
 <header>
     <nav>
@@ -127,7 +140,7 @@ align-content:center;
                 <li><a href="#">Gmail</li></a>
                 <li><a href="#">Images</li></a>
                 <li><a href="#"><img src="images/outline_apps_black_24dp.png" id="nav-icon"></li></a>
-                <li><a href="#">Sign In</li></a>
+                <li><a href="#" id="nav-button">Sign In</li></a>
             </div>
         </ul>
     </nav>
@@ -139,13 +152,12 @@ align-content:center;
             <img src="images/foogle-logo" width=300px>
         </div>
         <div class="foogle-search">
-            <div class="magnifying-glass"><img src="images/outline_search_black_24dp.png"
-                class="search-icons"></div>
+            <div class="magnifying-glass"><img src="images/outline_search_black_24dp.png" class="search-icons"></div>
             <form class="foogle-searchbox ">
                 <input type="text" class="search-textbox">
             </form>
 
-            
+
             <div class="microphone"><img src="images/outline_mic_black_24dp.png" class="search-icons"
                     alt="Search by voice">
             </div>
