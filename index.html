@@ -169,6 +169,15 @@ font-weight: lighter;    }
         text-decoration: none;
         background-color: rgb(41, 41, 255);
     }
+
+.bottom-banner{
+    display:grid;
+    width:100%;
+    grid-template-rows: 50px 50px;
+    grid-template-columns: repeat(3, 100px) auto repeat(3, 100px) ;
+}
+
+
 </style>
 <header>
     <div class="top-banner">
@@ -208,5 +217,17 @@ font-weight: lighter;    }
             <div class="grey-button" style="grid-column: 1;">Google Search</div>
             <div class="grey-button" style="grid-column: 3;">I'm feeling lucky</div>
         </div>
+        <div style="grid-area:4/2/5/3; text-align:center;">Google offered in: <a href="#">Français</a></div>
+    </div>
+    <div class="bottom-banner">
+        <div style="grid-area:1/1/2/8">Canada</div>
+        <div style="grid-area:2/1/3/2">Advertising</div>
+        <div style="grid-area:2/2/3/3">Business</div>
+        <div style="grid-area:2/3/3/4">How Search Works</div>
+        <div style="grid-area:2/5/3/6">Privacy</div>
+        <div style="grid-area:2/6/3/7">Terms</div>
+        <div style="grid-area:2/7/3/8">Settings</div>
+        
+
     </div>
 </main>
