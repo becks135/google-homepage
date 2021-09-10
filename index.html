@@ -4,7 +4,7 @@
         display: grid;
         align-items: center;
 
-        grid-template-rows: 3fr 45px 1fr 1fr;
+        grid-template-rows: 3fr 45px 2fr 1fr;
         grid-template-columns: 50px minmax(100px, 500px) 50px;
         justify-content: center;
     }
@@ -128,15 +128,20 @@
 
     .search-buttons{
         grid-area:3/2/4/3; 
-        display:flex;
-        justify-content: center;
-        gap:25px;
-        height: 35px;
+        display:grid;
+        grid-template-columns:130px 10px 130px;
+        justify-self: center;
+        align-self: center;
+     height:40px;   
     }
 
     .grey-button{
+        display: flex;
         background-color: rgb(236, 232, 232);
         width: 120px;
+        align-items: center;
+        justify-content: center;
+        height: 35px;
     }
 
 .grey-button:hover{
@@ -200,8 +205,8 @@
             </div>
         </div>
         <div class="search-buttons">
-            <div class="grey-button">Google Search</div>
-            <div class="grey-button">Google Search</div>
+            <div class="grey-button" style="grid-column: 1;">Google Search</div>
+            <div class="grey-button" style="grid-column: 3;">Google Search</div>
         </div>
     </div>
 </main>
