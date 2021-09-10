@@ -88,7 +88,7 @@
         filter: opacity(50%);
     }
 
-    
+
 
     a {
 
@@ -125,6 +125,28 @@
         gap: 12px;
 
     }
+
+    .search-buttons{
+        grid-area:3/2/4/3; 
+        display:flex;
+        justify-content: center;
+        gap:25px;
+        height: 35px;
+    }
+
+    .grey-button{
+        background-color: rgb(236, 232, 232);
+        width: 120px;
+    }
+
+.grey-button:hover{
+    border-style: solid;
+    border-color:lightgrey;
+    border-width: 0.5px;
+    box-shadow: 0px 0px 8px -2px #c7c6c6;
+
+
+}
 
     #nav-icon {
         height: 100%;
@@ -176,6 +198,10 @@
             <div class="microphone"><img src="images/outline_mic_black_24dp.png" class="search-icons"
                     alt="Search by voice">
             </div>
+        </div>
+        <div class="search-buttons">
+            <div class="grey-button">Google Search</div>
+            <div class="grey-button">Google Search</div>
         </div>
     </div>
 </main>
