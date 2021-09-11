@@ -9,8 +9,6 @@
         font-weight: 300;
     }
 
-
-
     a {
 
         text-decoration: none;
@@ -53,14 +51,35 @@
         margin-right: 15px;
     }
 
+    #nav-icon {
+        /*height: 30%*/
+        width: 60%;
+        padding: 5px;
+    }
+
+    #nav-icon:hover {
+        background-color: rgb(232, 232, 232);
+        border-radius: 50px;
+    }
+
+    #nav-button {
+        padding: 10px 20px 10px 20px;
+        background-color: blue;
+        color: white;
+        font-weight: 400;
+        border-radius: 5px;
+    }
+
+    #nav-button:hover {
+        text-decoration: none;
+        background-color: rgb(53, 53, 255);
+    }
 
     /*search area styles*/
-
     .search-container {
         width: 100%;
         display: grid;
         align-items: center;
-
         grid-template-rows: 150px 45px 100px 1fr;
         grid-template-columns: 50px minmax(100px, 500px) 50px;
         justify-content: center;
@@ -82,13 +101,10 @@
     }
 
     .google-searchbox {
-
-
         grid-area: 2/2/3/3;
         margin: 0px;
 
     }
-
 
     .google-search:hover,
     .google-search:focus-within {
@@ -98,44 +114,30 @@
     .google-logo {
         grid-area: 1/1/2/4;
         justify-self: center;
-
     }
 
     .magnifying-glass {
         grid-area: 2/1/2/2;
-
         display: flex;
-
         align-items: center;
-
-
     }
 
     .microphone {
         display: flex;
         grid-area: 2/3/3/4;
-
         align-items: center;
-
-
     }
 
     .search-textbox {
         width: 100%;
-
         height: 100%;
         border: none;
-
         font-size: larger;
-
     }
 
     .search-textbox:focus {
         outline: none;
-
     }
-
-
 
     .search-icons {
         display: block;
@@ -144,9 +146,6 @@
         width: 20px;
         filter: opacity(50%);
     }
-
-
-
 
     .search-buttons {
         grid-area: 3/2/4/3;
@@ -174,30 +173,7 @@
         text-decoration: none;
     }
 
-    #nav-icon {
-        /*height: 30%*/
-        width: 60%;
-        padding: 5px;
-    }
-
-    #nav-icon:hover {
-        background-color: rgb(232, 232, 232);
-        border-radius: 50px;
-    }
-
-    #nav-button {
-        padding: 10px 20px 10px 20px;
-        background-color: blue;
-        color: white;
-        font-weight: 400;
-        border-radius: 5px;
-    }
-
-    #nav-button:hover {
-        text-decoration: none;
-        background-color: rgb(53, 53, 255);
-    }
-
+    /*bottom banner styles*/
     .bottom-banner-main {
         display: grid;
         grid-template-rows: 50px auto;
@@ -216,29 +192,22 @@
         height: auto;
         flex-wrap: wrap;
         justify-content: space-around;
-        /*grid-template-rows: 40px 40px;
-        grid-template-columns: 100px 80px 150px auto repeat(3, 100px);*/
         align-items: center;
-        /*position: absolute;
-        bottom: 0px;
-        left: 0px;*/
         border-top: lightgray;
         border-top-style: solid;
         border-top-width: 0.5px;
-
         line-height: 3.5;
     }
 
     @media screen and (min-width: 1000px) {
         .bottom-banner {
-
             justify-content: space-between;
         }
     }
 </style>
+
 <header>
     <div class="top-banner">
-
         <div class="top-banner-item1"><a href="#">About</a></div>
         <div class="top-banner-item2"><a href="#">Store</a></div>
         <div class="top-banner-item3">
@@ -246,15 +215,11 @@
             <a href="#">Images</a>
             <a href="#"><img src="images/outline_apps_black_24dp.png" id="nav-icon"></a>
             <a href="#" id="nav-button">Sign in</a>
-
         </div>
-
-    </div>
-    </div>
     </div>
 </header>
-<main>
 
+<main>
     <div class="search-container">
         <div class="google-logo">
             <img src="images/google-logo.png" width=250px>
@@ -264,8 +229,6 @@
             <form class="google-searchbox ">
                 <input type="text" class="search-textbox">
             </form>
-
-
             <div class="microphone"><img src="images/google-microphone.png" class="search-icons"
                     style="filter:opacity(100%);" alt="Search by voice">
             </div>
@@ -274,12 +237,11 @@
             <a href="#" class="grey-button" style="grid-column: 1;">Google Search</a>
             <a href="#" class="grey-button" style="grid-column: 3;">I'm feeling lucky</a>
         </div>
-        <div style="grid-area:4/2/5/3; text-align:center;">Google offered in: <a href="#">Français</a></div>
+        <div style="grid-area:4/2/5/3; text-align:center;">Google offered in: <a href="#" style="color: blue;">Français</a></div>
     </div>
     <div class="bottom-banner-main">
         <div style="grid-area:1/1/2/2; padding-left: 25px;">Canada</div>
         <div class="bottom-banner">
-
             <div style="display: flex; gap: 20px; flex-wrap: nowrap; padding-left: 25px;">
                 <a href="#">Advertising</a>
                 <a href="#">Business</a>
