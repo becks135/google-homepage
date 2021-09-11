@@ -5,7 +5,7 @@ html {
 }
 
 a {
-    color: rgb(99, 98, 98);
+    color:inherit;
     text-decoration: none;
 }
 
