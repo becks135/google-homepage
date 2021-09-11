@@ -8,7 +8,7 @@
         display: grid;
         align-items: center;
 
-        grid-template-rows: 3fr 45px 2fr 1fr;
+        grid-template-rows: 150px 45px 100px 1fr;
         grid-template-columns: 50px minmax(100px, 500px) 50px;
         justify-content: center;
     }
@@ -37,7 +37,7 @@
     }
 
 
-    .foogle-search:hover {
+    .foogle-search:hover, .foogle-search:focus-within {
         box-shadow: 0px 0px 8px -2px #c7c6c6;
     }
 
@@ -98,6 +98,10 @@
         text-decoration: none;
     }
 
+    a:visited{
+        color:inherit;
+    }
+
     a:hover {
         text-decoration: underline;
     }
@@ -151,13 +155,13 @@
         align-items: center;
         justify-content: center;
         height: 35px;
+        border:0.5px solid transparent;
+        border-radius: 5px;
     }
 
     .grey-button:hover {
-        border-style: solid;
-        border-color: lightgrey;
-        border-width: 0.5px;
-        box-shadow: 0px 0px 3px -2px #c7c6c6;
+        border:0.5px solid lightgray;
+        box-shadow: 0px 1px 1px #c7c6c6;
 
     }
 
@@ -244,7 +248,7 @@
 
     <div class="search-container">
         <div class="foogle-logo">
-            <img src="images/foogle-logo" width=300px>
+            <img src="images/google-logo.png" width=250px>
         </div>
         <div class="foogle-search">
             <div class="magnifying-glass"><img src="images/outline_search_black_24dp.png" class="search-icons"></div>
@@ -253,7 +257,7 @@
             </form>
 
 
-            <div class="microphone"><img src="images/outline_mic_black_24dp.png" class="search-icons"
+            <div class="microphone"><img src="images/google-microphone.png" class="search-icons" style="filter:opacity(100%);"
                     alt="Search by voice">
             </div>
         </div>
@@ -268,14 +272,14 @@
         <div class="bottom-banner">
         
             <div style="display: flex; gap: 20px; flex-wrap: nowrap; padding-left: 15px;">
-                <div>Advertising</div>
-                <div>Business</div>
-                <div>How Search Works</div>
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search Works</a>
             </div>
             <div style="display: flex; gap: 20px; flex-wrap: nowrap; padding-right:15px;">
-                <div>Privacy</div>
-                <div>Terms</div>
-                <div>Settings</div>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
             </div>
         </div>
     </div>
