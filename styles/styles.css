@@ -27,6 +27,7 @@ a:hover {
     justify-items: center;
     font-size: 14px;
     font-weight: 400;
+    color:rgb(23, 23, 23);
 }
 
 .top-banner-item1 {
@@ -47,7 +48,7 @@ a:hover {
 }
 
 #nav-icon {
-    /*height: 30%*/
+   
     width: 60%;
     padding: 5px;
 }
@@ -78,6 +79,7 @@ a:hover {
     grid-template-rows: 150px 45px 100px 1fr;
     grid-template-columns: 50px minmax(100px, 500px) 50px;
     justify-content: center;
+    color:rgb(23, 23, 23);
 }
 
 .google-search {
